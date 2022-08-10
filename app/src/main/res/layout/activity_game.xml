@@ -3,8 +3,185 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fonst"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".white.Game">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="140dp"
+      android:layout_margin="10dp"
+      android:background="@color/black"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.157"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.213">
+
+    <ImageView
+        android:backgroundTint="#B6DDEF"
+        android:id="@+id/im1"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:src="@drawable/second" />
+
+    <ImageView
+        android:backgroundTint="#B6DDEF"
+        android:id="@+id/im2"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:src="@drawable/first" />
+
+    <ImageView
+        android:backgroundTint="#B6DDEF"
+        android:id="@+id/im3"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:src="@drawable/second" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayout2"
+      android:layout_width="match_parent"
+      android:layout_height="140dp"
+      android:layout_margin="10dp"
+      android:background="@color/black"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.473"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.636">
+
+    <ImageView
+        android:backgroundTint="#B6DDEF"
+        android:id="@+id/im4"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:src="@drawable/third" />
+
+    <ImageView
+        android:backgroundTint="#B6DDEF"
+        android:id="@+id/im5"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:src="@drawable/first" />
+
+    <ImageView
+        android:backgroundTint="#B6DDEF"
+        android:id="@+id/im6"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:src="@drawable/second" />
+
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/rulebtn"
+      android:layout_width="60dp"
+      android:layout_height="63dp"
+      android:src="@drawable/rules"
+
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.95"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.009" />
+
+  <ImageView
+      android:id="@+id/startBtn"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginBottom="60dp"
+      android:src="@drawable/start"
+
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <TextView
+      android:textColor="@color/white"
+      android:id="@+id/point2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Enemy Point : "
+      android:textSize="24dp"
+      android:fontFamily="@font/fonts1"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.057"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.65" />
+
+  <TextView
+      android:textColor="@color/white"
+      android:id="@+id/point1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Your Point : "
+      android:textSize="24dp"
+      android:fontFamily="@font/fonts1"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.057"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+      app:layout_constraintVertical_bias="0.466" />
+
+  <TextView
+      android:textColor="@color/white"
+      android:id="@+id/score1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="0"
+      android:textSize="24dp"
+      android:fontFamily="@font/fonts1"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/point1"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+      app:layout_constraintVertical_bias="0.463" />
+
+  <TextView
+      android:id="@+id/score2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="0"
+      android:textSize="24dp"
+      android:fontFamily="@font/fonts1"
+      android:textColor="@color/white"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/point2"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.65" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

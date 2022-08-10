@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fonst"
     tools:context=".black.MainActivity">
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_url="https://assets3.lottiefiles.com/private_files/lf30_esg1l8r1.json"/>
+        app:lottie_url="https://assets1.lottiefiles.com/packages/lf20_8rgvqfre.json"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

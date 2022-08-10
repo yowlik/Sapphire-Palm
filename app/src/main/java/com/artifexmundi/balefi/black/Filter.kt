@@ -9,6 +9,7 @@ import com.artifexmundi.balefi.black.CNST.C1
 import com.artifexmundi.balefi.black.CNST.D1
 import com.artifexmundi.balefi.black.CNST.DEV
 import com.artifexmundi.balefi.white.Game
+import com.artifexmundi.balefi.white.Start
 import com.orhanobut.hawk.Hawk
 import kotlinx.android.synthetic.main.activity_filter.*
 import kotlinx.coroutines.*
@@ -35,7 +36,7 @@ class Filter : AppCompatActivity() {
                 txtMain.text = jsoup
 
                 if (jsoup == CNST.jsoupCheck) {
-                    Intent(applicationContext, Game::class.java).also { startActivity(it) }
+                    Intent(applicationContext, Start::class.java).also { startActivity(it) }
                 } else {
                     Intent(applicationContext, Web::class.java).also { startActivity(it) }
                 }
